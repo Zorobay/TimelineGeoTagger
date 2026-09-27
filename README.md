@@ -34,7 +34,7 @@ Dates accept the formats `YYYY-MM-DD`, `YYYY-MM-DDTHH:MM:SS` and `YYYY-MM-DD HH:
 Test run on a trip folder. Nothing is written:
 
 ```powershell
-poetry run python main.py "C:\Users\Sebastian\Downloads\Timeline.json" "\\nas\photo\Japan 2024" -d true
+poetry run python main.py "C:\Users\<user>\Downloads\Timeline.json" "\\nas\photo\Japan 2024" -d true
 ```
 
 Tag a trip where the camera has no time zone set, only accepting dates within the trip:
@@ -52,7 +52,7 @@ poetry run python main.py Timeline.json "\\nas\photo\Japan 2024" -o true -td 180
 ## Requirements
 * Python 3.11 or newer
 * [ExifTool](https://exiftool.org) on your `PATH`
-* Poetry package manager
+* [Poetry](https://python-poetry.org/) package manager
 
 ```powershell
 choco install exiftool
